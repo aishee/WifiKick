@@ -2,6 +2,8 @@ import argparse
 import os
 from scapy import *
 
+#__author__ = "Aishee"
+
 def parse_arg():
     parser = argparse.ArgumentParser
     subparsers = parser.add_subparsers()
@@ -59,3 +61,4 @@ if __name__ == "__main__":
         exit("You need to have root privileges to run this scripts")
     args = parse_arg()
     args.func(args)
+    
